@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Judge Arena — Competitive Programming</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/editor/editor.main.min.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">J</div><div><b>JUDGE ARENA</b><small>COMPETITIVE PLATFORM</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <button class="nav active" data-view="dashboard">◫ <span>Dashboard</span></button>
+    <button class="nav" data-view="problems">▤ <span>Problem Set</span></button>
+    <button class="nav" data-view="contests">◷ <span>Contests</span></button>
+    <button class="nav" data-view="submissions">⌁ <span>My Submissions</span></button>
+    <button class="nav" data-view="ranking">♜ <span>Leaderboard</span></button>
+    <div class="sidebar-bottom"><div class="user-chip"><div class="avatar" id="avatar">?</div><div><b id="userLabel">Guest</b><small id="userRole">Not signed in</small></div></div><button id="authBtn" class="outline small">Sign in</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="crumb">ARENA</span><span class="slash">/</span><b id="pageTitle">Dashboard</b></div><div class="top-actions"><span class="status-dot"></span><span>Judge system operational</span></div></header>
+    <section id="view" class="content"></section>
+  </main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-x" id="modalClose">×</button><div id="modalBody"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.min.js"></script>
+<script src="/static/app.js"></script>
+</body></html>
